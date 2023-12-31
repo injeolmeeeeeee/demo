@@ -12,7 +12,6 @@ COPY mvnw.cmd .
 COPY pom.xml .
 COPY .mvn .mvn
 COPY src src
-COPY events.json .
 
 # Build the application
 RUN mvn package -Dmaven.test.skip=true
