@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot + Thymeleaf + Redis</title>
+</head>
+<body>
+    <h2>Stored Value: <span th:text="${storedValue}"></span></h2>
+    <form method="post" action="/save">
+        <label for="value">Enter Value:</label>
+        <input type="text" id="value" name="value" required>
+        <button type="submit">Save to Redis</button>
+    </form>
+</body>
+</html>
